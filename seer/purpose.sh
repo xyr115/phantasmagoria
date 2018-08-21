@@ -91,11 +91,6 @@ printf "\tList iptables rules\n"
 printf "====================================================================\n\n"
 iptables -L
 
-# show the routing table
-printf "\n\n\n====================================================================\n"
-printf "\tListing out the routing table\n"
-printf "====================================================================\n\n"
-route -n
 
 # showing the users set up on the machine
 printf "\n\n\n====================================================================\n"
@@ -103,4 +98,9 @@ printf "\tList of users on the machine\n"
 printf "====================================================================\n\n"
 sort /etc/passwd | cut -d ':' -f 1
 
-Found on Spiceworks: https://community.spiceworks.com/scripts/show/2153-determine-the-purpose-of-a-linux-server?utm_source=copy_paste&utm_campaign=growth
+# show the routing table
+printf "\n\n\n====================================================================\n"
+printf "\tListing out the routing table\n"
+printf "====================================================================\n\n"
+route -n
+
